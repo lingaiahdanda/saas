@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>landing page design</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="scss/style.css">
+	</head>
+	<body>
+		
+		<div id="container">
+			<div class="button dark" id="dark" onclick="darkColor()"></div>
+			<div class="button light" id="light" onclick="lightColor()"></div>
+			<nav class="navbar">
+				<a id='link'>Home</a>
+				<a id='link1'>About</a>
+				<a id='link2'>Products</a>
+				<a id='link3'>Features</a>
+				<a id='link4'>Buy Now</a>
+			</nav>
+			<div id="background"></div>
+			<div class="section">
+				<h1 id="title" class="margin-top">SUPER LANDING</h1>
+				<h2 class="less-margin">a <span class="highlight">wristband</span> that lets you </h2>
+				<br><h2>wear fitness <span class="highlight">your way</span>.</h2>
+
+				<h1 id="look">Find your look</h1>
+				<div class="alta">
+					<img id="alta" src="assets/n.png">
+				</div>
+			</div>
+			<p id="desc">A new dual‑camera system captures more of what you see and love. The fastest chip ever in a smartphone and all‑day battery life let you do more and charge less. And the highest-quality video in a smartphone, so your memories look better than ever.</p>
+	</div>
+
+	<script>
+		let alta = document.getElementById('alta');
+		let background = document.getElementById('background');
+		let title = document.getElementById('title');
+		let look = document.getElementById('look');
+		let desc=document.getElementById('desc');
+		let link = document.getElementById('link');
+		let link1 = document.getElementById('link1');
+		let link2 = document.getElementById('link2');
+		let link3 = document.getElementById('link3');
+		let link4 = document.getElementById('link4');
+		
+		function darkColor() {
+			alta.src='assets/im.png';
+			background.style.backgroundColor = '#222';
+			title.style.color= 'white';
+			desc.style.color='white';
+			link.style.color="white";
+			link1.style.color="white";
+			link2.style.color="white";
+			link3.style.color="white";
+			link4.style.color="white";
+			link5.style.color="white";
+			look.style.color="white";
+
+		}
+
+		function lightColor() {
+		alta.src='assets/n.png';
+		background.style.backgroundColor = '#d3d3d3';
+		title.style.color= 'black';
+		desc.style.color='black';
+		link.style.color="black";
+		link1.style.color="black";
+		link2.style.color="black";
+		link3.style.color="black";
+		link4.style.color="white";
+		link5.style.color="black";
+		look.style.color="black";
+
+		}
+	</script>
+	
+	</body>
+</html>
